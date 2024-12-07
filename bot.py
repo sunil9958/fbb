@@ -277,6 +277,48 @@ Fᴏʀ ᴀɴʏ Pʀᴏʙʟᴇᴍ ᴀɴᴅ ᴅᴏᴜʙᴛ ᴛᴀʟᴋ ᴛᴏ Aᴅ�
 
     # Send the message
     await message.reply_text(plan_text, reply_markup=keyboard)
+
+@app.on_message(filters.command("add") & filters.user(ADMINS))
+async def handle_add_premium(client: Client, message: Message):
+    if len(message.command) < 2:
+        await message.reply("Please specify the user ID. Usage: /add <user_id>")
+        return
+
+    try:
+        user_id = int(message.command[1])
+        await add_premium(user_id)
+        await message.reply(f"User with ID {user_id} has been granted premium status.")
+    except ValueError:
+        await message.reply("Invalid user ID format.")
+
+# Command handler for removing premium
+@app.on_message(filters.command("rm")& filters.user(ADMINS))
+async def handle_remove_premium(client: Client, message: Message):
+    if len(message.command) < 2:
+        await message.reply("Please specify the user ID. Usage: /rm <user_id>")
+        return
+
+    try:
+        user_id = int(message.command[1])
+        await remove_premium(user_id)
+        await message.reply(f"Premium status has been removed for user ID {user_id}.")
+    except ValueError:
+        await message.reply("Invalid user ID format.")
+
+# Command handler for checking premium status
+@app.on_message(filters.command("cp") & filters.user(ADMINS))
+async def handle_check_premium(client: Client, message: Message):
+    if len(message.command) < 2:
+        await message.reply("Please specify the user ID. Usage: /cp <user_id>")
+        return
+
+    try:
+        user_id = int(message.command[1])
+        is_premium_status = await is_premium(user_id)
+        status_text = "has premium" if is_premium_status else "does not have premium"
+        await message.reply(f"User with ID {user_id} {status_text}.")
+    except ValueError:
+        await message.reply("Invalid user ID format.")
 @app.on_message(filters.command("stats") & filters.user(ADMINS))
 async def stats_command(client, message):
     total_users = users_collection.count_documents({})
