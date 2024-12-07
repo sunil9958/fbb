@@ -374,7 +374,7 @@ async def handle_message(client, message: Message):
     is_member = await is_user_member(client, user_id)
 
     if not is_member:
-        join_button = InlineKeyboardButton("Join ❤️🚀", url="https://t.me/SvFilmsX_Official")
+        join_button = InlineKeyboardButton("Join ❤️🚀", url="https://t.me/Loot_and_Earn_Money")
         reply_markup = InlineKeyboardMarkup([[join_button]])
         await message.reply_text("✳️ To keep things secure and make sure only real users are accessing the bot, please subscribe to the channel below first.", reply_markup=reply_markup)
         return
