@@ -94,19 +94,30 @@ async def is_premium(user_id: int):
 
 
 # Add premium status to a user
+# Add premium status to a user
 async def add_premium(user_id: int):
     try:
         # Ensure the user exists
         if not await present_user(user_id):
             await add_user(user_id)
 
-        # Update the user's premium status
+        # Update the user's premium status and verify status
         await user_data.update_one(
             {'_id': user_id},
-            {'$set': {'premium_status.has_premium': True}}
+            {
+                '$set': {
+                    'premium_status.has_premium': True,
+                    'verify_status.is_verified': True,
+                    'verify_status.verified_time': 9999999999999,  # Unlimited time (set to a very high value)
+                    'verify_status.verify_token': "",  # Optionally reset the verification token
+                    'verify_status.link': ""  # Optionally reset the verification link
+                }
+            }
         )
+        print(f"User {user_id} has been granted premium and verification.")
     except Exception as e:
-        print(f"Error adding premium status: {e}")
+        print(f"Error adding premium and verification status: {e}")
+
 
 # Remove premium status from a user
 async def remove_premium(user_id: int):
