@@ -1,8 +1,8 @@
 const axios = require('axios');
 
-const botToken = "7926108528:AAFD-JSvZ2EzZOVE8IK_aiY0F1wy9UV4wpk"; // Replace with your bot token
-const accessToken = "Teleservice_36da02c259015c341768052d9a0aa5e69ce2a256dc980e642135b3fe95953544"; // Access token
-const admin = "6334683599"; // Replace with your Telegram admin ID
+const botToken = "7665684522:AAHPhv9J7br7vBkQWxs_DxjMZpXzSKG_5Eg"; // Replace with your bot token
+const accessToken = "Teleservice_fe2a87711eebf10e204895dbe378858c2460e6b2369feda10fe943265927eb6b"; // Access token
+const admin = "602583967"; // Replace with your Telegram admin ID
 
 async function sendMessage(message) {
   const url = "https://api.teleservices.io/Broadcast/broadcast/";
