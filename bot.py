@@ -154,8 +154,8 @@ async def handle_premium_user(client, message, user_mention):
         "💎 **You're enjoying premium access, unlocking all features and the best experience!**\n\n"
         "**Join our community and explore even more!** 👇"
     )
-    join_button = InlineKeyboardButton("🌐 Join Community ❤️", url="https://t.me/teleservices_api")
-    developer_button = InlineKeyboardButton("👨‍💻 Developer ⚡️", url="https://t.me/techscoder")
+    join_button = InlineKeyboardButton("🌐 Join Community ❤️", url="https://t.me/Loot_and_Earn_Money")
+    developer_button = InlineKeyboardButton("👨‍💻 Buy Premium ⚡️", url="https://t.me/Sunil_v")
     reply_markup = InlineKeyboardMarkup([[join_button, developer_button]])
     await message.reply_text(reply_message, reply_markup=reply_markup)
 async def handle_verified_non_premium_user(client, message, user_mention):
