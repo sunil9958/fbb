@@ -18,7 +18,7 @@ logging.basicConfig(level=logging.INFO)
 mongo_url = 'mongodb+srv://Sunilvs2024:Sunilvs2024@cluster0.fdkbx.mongodb.net/?retryWrites=true&w=majority'
 client = MongoClient(mongo_url)
 db = client['Sunilvs2024']
-channel_id = '@Diskwala_Links'
+channel_id = '@Loot_and_Earn_Money'
 users_collection = db['users']
 VERIFY_EXPIRE = 43200
 IS_VERIFY = "True"
