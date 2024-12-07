@@ -15,20 +15,20 @@ from database.database import present_user, add_user, full_userbase, del_user, d
 import string
 logging.basicConfig(level=logging.INFO)
 
-mongo_url = 'mongodb+srv://muiz123:muiz123AHMED@cluster0.x8pxe.mongodb.net/?retryWrites=true&w=majority'
+mongo_url = ''
 client = MongoClient(mongo_url)
 db = client['cphdlust']
 channel_id = '@Teleservices_Api'
 users_collection = db['users']
 VERIFY_EXPIRE = 43200
 IS_VERIFY = "True"
-access_token = 'Teleservice_0042409e658a2075de1ccd095879b6717335f2b9f44f8dc7ee226b3b9cc946d2'
-username = 'Fastterabox2linkdownbot'
-BOT_API_TOKEN = '7826451868:AAFPZAixVup4vUnRkA9rGaqd3NQiLQBAWGk'
-API_ID = '27961050'
-dump_id = '-1002172770176'
+access_token = ''
+username = ''
+BOT_API_TOKEN = ''
+API_ID = ''
+dump_id = '-1002172770176' # idhar kuch nhi dalna or hatana bhi nhi
 fsub_id = '@Teleservices_Api'
-API_HASH = '9e5ca9e6da48a36c102ae9c8c8abac9f'
+API_HASH = ''
 SHORTLINK_URL = 'modijiurl.com'
 SHORTLINK_API = '1ba76e07a358d81f92aebbfe5fce664c17e5b2f3'
 ADMINS = 6334683599
