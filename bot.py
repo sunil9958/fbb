@@ -172,8 +172,8 @@ async def handle_verified_non_premium_user(client, message, user_mention):
         "Upgrade to premium for unlimited features, faster downloads, and priority support! 🌟\n\n"
         "**Join our community and learn more!** 👇"
     )
-    join_button = InlineKeyboardButton("🌐 Join Community ❤️", url="https://t.me/teleservices_api")
-    upgrade_button = InlineKeyboardButton("💎 Upgrade to Premium ⚡️", url="https://t.me/techscoder")
+    join_button = InlineKeyboardButton("🌐 Join Community ❤️", url="https://t.me/Loot_and_Earn_Money")
+    upgrade_button = InlineKeyboardButton("💎 Upgrade to Premium ⚡️", url="https://t.me/Sunil_v")
     reply_markup = InlineKeyboardMarkup([[join_button, upgrade_button]])
     await message.reply_text(reply_message, reply_markup=reply_markup)
 async def handle_non_premium_user(client, message, verify_status, user_id, user_mention):
@@ -189,7 +189,7 @@ async def handle_non_premium_user(client, message, verify_status, user_id, user_
         "🔗 Click the button to verify:\n"
     )
     token_button = InlineKeyboardButton("🔑 Verify Now", url=link)
-    tutorial_button = InlineKeyboardButton("📚 How to Verify", url="https://t.me/TeleServices_Bots/96")
+    tutorial_button = InlineKeyboardButton("📚 How to Verify", url="https://t.me/how_to_download_SvFilmsX/17")
     reply_markup = InlineKeyboardMarkup([[token_button], [tutorial_button]])
     await message.reply_text(message_text, reply_markup=reply_markup)
 
@@ -270,7 +270,7 @@ Fᴏʀ ᴀɴʏ Pʀᴏʙʟᴇᴍ ᴀɴᴅ ᴅᴏᴜʙᴛ ᴛᴀʟᴋ ᴛᴏ Aᴅ�
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📤 Send Screenshot", url="https://t.me/techscoder")
+                InlineKeyboardButton("📤 Send Screenshot", url="https://t.me/sunil_v")
             ]
         ]
     )
@@ -374,7 +374,7 @@ async def handle_message(client, message: Message):
     is_member = await is_user_member(client, user_id)
 
     if not is_member:
-        join_button = InlineKeyboardButton("Join ❤️🚀", url="https://t.me/Ashlynn_Repository")
+        join_button = InlineKeyboardButton("Join ❤️🚀", url="https://t.me/SvFilmsX_Official")
         reply_markup = InlineKeyboardMarkup([[join_button]])
         await message.reply_text("✳️ To keep things secure and make sure only real users are accessing the bot, please subscribe to the channel below first.", reply_markup=reply_markup)
         return
