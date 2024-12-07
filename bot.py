@@ -15,23 +15,23 @@ from database.database import present_user, add_user, full_userbase, del_user, d
 import string
 logging.basicConfig(level=logging.INFO)
 
-mongo_url = ''
+mongo_url = 'mongodb+srv://Sunilvs2024:Sunilvs2024@cluster0.fdkbx.mongodb.net/?retryWrites=true&w=majority'
 client = MongoClient(mongo_url)
-db = client['cphdlust']
-channel_id = '@Teleservices_Api'
+db = client['Sunilvs2024']
+channel_id = '@Diskwala_Links'
 users_collection = db['users']
 VERIFY_EXPIRE = 43200
 IS_VERIFY = "True"
 access_token = ''
-username = ''
-BOT_API_TOKEN = ''
-API_ID = ''
+username = 'Sunil_v99'
+BOT_API_TOKEN = '7665684522:AAHPhv9J7br7vBkQWxs_DxjMZpXzSKG_5Eg'
+API_ID = '1194196'
 dump_id = '-1002172770176' # idhar kuch nhi dalna or hatana bhi nhi
-fsub_id = '@Teleservices_Api'
-API_HASH = ''
+fsub_id = '@Loot_and_Earn_Money'
+API_HASH = '15d9b47380ff02c8ea404f623461a081'
 SHORTLINK_URL = 'modijiurl.com'
-SHORTLINK_API = '1ba76e07a358d81f92aebbfe5fce664c17e5b2f3'
-ADMINS = 6334683599
+SHORTLINK_API = '20bb8e8e7b6fb1ccfa4165aa4b55036c44f75ced'
+ADMINS = 602583967
 def addu(user_id):
     """
     Sends a request to add a user to the broadcast service.
