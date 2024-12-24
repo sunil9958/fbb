@@ -22,16 +22,16 @@ channel_id = '@Loot_and_Earn_Money'
 users_collection = db['users']
 VERIFY_EXPIRE = 43200
 IS_VERIFY = "True"
-access_token = 'Teleservice_fe2a87711eebf10e204895dbe378858c2460e6b2369feda10fe943265927eb6b'
+access_token = 'Teleservice_e9a7937659f6ba3e51a465bbd7c6d5b68a40de2fe5488615dd1fa2c486823549'
 username = 'Terabox_To_Link_Converter_Bot'
-BOT_API_TOKEN = '7665684522:AAHPhv9J7br7vBkQWxs_DxjMZpXzSKG_5Eg'
+BOT_API_TOKEN = '7514264753:AAGF_Flciu6o7uWGusvRyskDugLRaIsgPq0'
 API_ID = '1194196'
 dump_id = '-1002025149003' # idhar kuch nhi dalna or hatana bhi nhi
 fsub_id = '@Loot_and_Earn_Money'
 API_HASH = '15d9b47380ff02c8ea404f623461a081'
 SHORTLINK_URL = 'modijiurl.com'
 SHORTLINK_API = '20bb8e8e7b6fb1ccfa4165aa4b55036c44f75ced'
-ADMINS = 602583967
+ADMINS = 5390137933
 def addu(user_id):
     """
     Sends a request to add a user to the broadcast service.
