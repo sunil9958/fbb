@@ -163,17 +163,17 @@ async def handle_verified_non_premium_user(client, message, user_mention):
     reply_message = (
         f"👋 Hey there, {user_mention}!\n\n"
         "🚀 **Welcome to the Most Advanced TeraBox Downloader Bot!**\n\n"
-        "🌟 **Enjoy the Free Version!**\n"
+        "🌟 
         "- **Fast and Reliable** downloader bot on Telegram ⚡️\n"
-        "- **Free to use**, supported by our community 🆓\n"
+        "- **Free to use** 🆓\n"
         "- Download TeraBox files and access essential features 🎥📁\n"
-        "- Available **24/7**, but with some limitations ⏰\n\n"
+        "- Available **24/7** ⏰\n\n"
         "💎 **Want to unlock premium access and get the best experience?**\n"
         "Upgrade to premium for unlimited features, faster downloads, and priority support! 🌟\n\n"
-        "**Join our community and learn more!** 👇"
+        "** Premium Buy - @Sunil_v ** "
     )
-    join_button = InlineKeyboardButton("🌐 Join Community ❤️", url="https://t.me/Loot_and_Earn_Money")
-    upgrade_button = InlineKeyboardButton("💎 Upgrade to Premium ⚡️", url="https://t.me/Sunil_v")
+    join_button = InlineKeyboardButton("🌐 Join ❤️", url="https://t.me/Loot_and_Earn_Money")
+    upgrade_button = InlineKeyboardButton("💎 Premium Plan ⚡️", url="https://t.me/Sunil_v")
     reply_markup = InlineKeyboardMarkup([[join_button, upgrade_button]])
     await message.reply_text(reply_message, reply_markup=reply_markup)
 async def handle_non_premium_user(client, message, verify_status, user_id, user_mention):
@@ -239,7 +239,7 @@ async def is_user_member(client: Client, user_id: int) -> bool:
         return False
 
 def is_terabox_link(link):
-    keywords = ["terabox", "terafileshare", "1024tera", "terasharelink", "xnxx"]
+    keywords = ["terabox", "terafileshare", "1024tera", "terasharelink", "Diskwala", "xnxx"]
     return any(keyword in link.lower() for keyword in keywords)
 @app.on_message(filters.command("plan") & filters.incoming)
 async def send_pro_plan(client: Client, message: Message):
