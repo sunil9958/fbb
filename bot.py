@@ -164,7 +164,7 @@ async def handle_verified_non_premium_user(client, message, user_mention):
         f"👋 Hey there, {user_mention}!\n\n"
         "🚀 **Welcome to the Most Advanced TeraBox Downloader Bot!**\n\n"
         "🌟 **Enjoy the Free Version!**\n"
-        "- **Fast and Reliable** downloader bot on Telegram ⚡️\n
+        "- **Fast and Reliable** downloader bot on Telegram ⚡️\n"
         "- Download TeraBox files and access essential features 🎥📁\n"
         "- Available **24/7**, but with some limitations ⏰\n\n"
         "Upgrade to premium for unlimited features, faster downloads, and priority support! 🌟\n\n"
