@@ -167,9 +167,8 @@ async def handle_verified_non_premium_user(client, message, user_mention):
         "- **Fast and Reliable** downloader bot on Telegram ⚡️\n
         "- Download TeraBox files and access essential features 🎥📁\n"
         "- Available **24/7**, but with some limitations ⏰\n\n"
-        "💎 **Want to unlock premium access and get the best experience?**\n"
         "Upgrade to premium for unlimited features, faster downloads, and priority support! 🌟\n\n"
-        "**Join our community and learn more!** 👇"
+     
     )
     join_button = InlineKeyboardButton("🌐 Join ❤️", url="https://t.me/Loot_and_Earn_Money")
     upgrade_button = InlineKeyboardButton("💎 Premium Plan ⚡️", url="https://t.me/Sunil_v")
