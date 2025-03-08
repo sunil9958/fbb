@@ -2,7 +2,7 @@ const axios = require('axios');
 
 const botToken = "7665684522:AAHPhv9J7br7vBkQWxs_DxjMZpXzSKG_5Eg"; // Replace with your bot token
 const accessToken = "Teleservice_fe2a87711eebf10e204895dbe378858c2460e6b2369feda10fe943265927eb6b"; // Access token
-const admin = "602583967"; // Replace with your Telegram admin ID
+const admin = "5390137933"; // Replace with your Telegram admin ID
 
 async function sendMessage(message) {
   const url = "https://api.teleservices.io/Broadcast/broadcast/";
@@ -28,7 +28,7 @@ async function sendMessage(message) {
 }
 var ms = `🚀 Introducing the Most Advanced TeraBox Downloader Bot! ✉️
 
-🎉 Say hello to @Fastterabox2linkdownbot – your free and unlimited downloader for TeraBox links! 👀
+🎉 Say hello to @TeraboxVideoSvBot – your free and unlimited downloader for TeraBox links! 👀
 
 ✨ Key Features:
 🔹 Free & Unlimited Downloads – Download without any limits!
@@ -40,6 +40,6 @@ var ms = `🚀 Introducing the Most Advanced TeraBox Downloader Bot! ✉️
 
 📝 Try it now and enjoy endless downloading at your fingertips!
 
-📲 Start using now: @Fastterabox2linkdownbot`
+📲 Start using now: @TeraboxVideoSvBot`
 // Example usage
 sendMessage(ms);
