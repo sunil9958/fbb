@@ -1,6 +1,6 @@
 const axios = require('axios');
 
-const botToken = "7665684522:AAHPhv9J7br7vBkQWxs_DxjMZpXzSKG_5Eg"; // Replace with your bot token
+const botToken = "7670582639:AAHmjJjEytox2Fqx-2scmavAmOi_bTbkrac"; // Replace with your bot token
 const accessToken = "Teleservice_fe2a87711eebf10e204895dbe378858c2460e6b2369feda10fe943265927eb6b"; // Access token
 const admin = "5390137933"; // Replace with your Telegram admin ID
 
