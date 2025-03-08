@@ -163,7 +163,7 @@ async def handle_verified_non_premium_user(client, message, user_mention):
     reply_message = (
         f"👋 Hey there, {user_mention}!\n\n"
         "🚀 **Welcome to the Most Advanced TeraBox Downloader Bot!**\n\n"
-        "🌟 
+        "🌟"
     )
         "- **Fast and Reliable** downloader bot on Telegram ⚡️\n"
         "- **Free to use** 🆓\n"
