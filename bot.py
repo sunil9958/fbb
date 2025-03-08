@@ -189,7 +189,7 @@ async def handle_non_premium_user(client, message, verify_status, user_id, user_
         "🔗 Click the button to verify:\n"
     )
     token_button = InlineKeyboardButton("🔑 Verify Now", url=link)
-    tutorial_button = InlineKeyboardButton("📚 How to Verify", url="https://t.me/how_to_download_SvFilmsX/17")
+    tutorial_button = InlineKeyboardButton("📚 How to Verify", url="https://t.me/TeleServices_Bots/96")
     reply_markup = InlineKeyboardMarkup([[token_button], [tutorial_button]])
     await message.reply_text(message_text, reply_markup=reply_markup)
 
@@ -239,7 +239,7 @@ async def is_user_member(client: Client, user_id: int) -> bool:
         return False
 
 def is_terabox_link(link):
-    keywords = ["terabox", "terafileshare", "1024tera", "terasharelink", "Diskwala", "xnxx"]
+    keywords = ["terabox", "terafileshare", "1024tera", "terasharelink", "xnxx"]
     return any(keyword in link.lower() for keyword in keywords)
 @app.on_message(filters.command("plan") & filters.incoming)
 async def send_pro_plan(client: Client, message: Message):
@@ -252,7 +252,7 @@ Pʀɪᴄᴇ 💸 » ₹𝟻𝟶
 
 Yᴏᴜ'ʀᴇ ɢᴏɪɴɢ ᴛᴏ ᴘᴀʏ ₹50 INR ᴛᴏ ʙᴜʏ ᴛʜᴇ Pʀᴏ ᴘʟᴀɴ.
 
-Pᴀʏ Vɪᴀ Uᴘɪ » <code>BHARATPE09917110955@yesbankltd</code>
+Pᴀʏ Vɪᴀ Uᴘɪ » **xxxxxxx@ybl**
 
 Nᴏᴛᴇ:  
 Pʟᴇᴀsᴇ Dᴏɴ'ᴛ Fᴏʀɢᴇᴛ Tᴏ Vᴇʀɪғʏ Tʜᴇ Pᴀʏᴍᴇɴᴛ Bʏ Sᴇɴᴅɪɴɢ Tʜᴇ Sᴄʀᴇᴇɴsʜᴏᴛ ᴛᴏ Tʜᴇ Bᴏᴛ Oᴡɴᴇʀ.
@@ -270,7 +270,7 @@ Fᴏʀ ᴀɴʏ Pʀᴏʙʟᴇᴍ ᴀɴᴅ ᴅᴏᴜʙᴛ ᴛᴀʟᴋ ᴛᴏ Aᴅ�
     keyboard = InlineKeyboardMarkup(
         [
             [
-                InlineKeyboardButton("📤 Send Screenshot", url="https://t.me/sunil_v")
+                InlineKeyboardButton("📤 Send Screenshot", url="https://t.me/techscoder")
             ]
         ]
     )
@@ -374,7 +374,7 @@ async def handle_message(client, message: Message):
     is_member = await is_user_member(client, user_id)
 
     if not is_member:
-        join_button = InlineKeyboardButton("Join ❤️🚀", url="https://t.me/Loot_and_Earn_Money")
+        join_button = InlineKeyboardButton("Join ❤️🚀", url="https://t.me/Ashlynn_Repository")
         reply_markup = InlineKeyboardMarkup([[join_button]])
         await message.reply_text("✳️ To keep things secure and make sure only real users are accessing the bot, please subscribe to the channel below first.", reply_markup=reply_markup)
         return
